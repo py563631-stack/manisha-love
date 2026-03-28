@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>For Manisha ❤️</title>
+  <style>
+    body {
+      text-align: center;
+      font-family: Arial;
+      background: linear-gradient(to right, #ff758c, #ff7eb3);
+      color: white;
+      padding-top: 100px;
+      overflow: hidden;
+    }
+    h1 {
+      font-size: 45px;
+    }
+    button {
+      padding: 15px 25px;
+      font-size: 18px;
+      border: none;
+      border-radius: 10px;
+      cursor: pointer;
+      margin: 10px;
+    }
+    #yes {
+      background: white;
+      color: #ff4d6d;
+    }
+    #no {
+      background: black;
+      color: white;
+      position: absolute;
+    }
+  </style>
+</head>
+<body>
+
+<h1>Hey Manisha ❤️</h1>
+<p>I made this just for you 😌</p>
+
+<h2>Will you be mine? 💖</h2>
+
+<button id="yes" onclick="yesClicked()">Yes 💘</button>
+<button id="no" onmouseover="moveButton()">No 😜</button>
+
+<audio autoplay loop>
+  <source src="https://www.bensound.com/bensound-music/bensound-romantic.mp3" type="audio/mpeg">
+</audio>
+
+<script>
+function yesClicked() {
+  alert("Yayyy ❤️ I love you Manisha 😍💖");
+}
+
+function moveButton() {
+  var button = document.getElementById("no");
+  button.style.top = Math.random() * window.innerHeight + "px";
+  button.style.left = Math.random() * window.innerWidth + "px";
+}
+</script>
+
+</body>
+</html>
